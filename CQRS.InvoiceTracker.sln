@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{B62BC2DD-A017-4B8B-8FFC-8390E327D778}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{DA2A3A5E-9FAE-4EF9-B5F2-4CE4179C0B8B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reporting", "Reporting", "{45C0318A-90CE-4D9F-9605-C2DC8AC46E93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRS.InvoiceTracker.Domain", "CQRS.InvoiceTracker.Domain\CQRS.InvoiceTracker.Domain.csproj", "{F445D7E6-82CD-49B5-BFA1-9CDD841FF35C}"
+EndProject
+Project("{C8D11400-126E-41CD-887F-60BD40844F9E}") = "CQRS.InvoiceTracker.Domain.Database", "CQRS.InvoiceTracker.Domain.Database\CQRS.InvoiceTracker.Domain.Database.dbproj", "{67CBC824-A49E-4E9B-A947-360F3DFE65C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRS.InvoiceTracker.CommandHandlers", "CQRS.InvoiceTracker.CommandHandlers\CQRS.InvoiceTracker.CommandHandlers.csproj", "{C13985AB-A483-485C-A7B5-1C69AA85E227}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F445D7E6-82CD-49B5-BFA1-9CDD841FF35C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F445D7E6-82CD-49B5-BFA1-9CDD841FF35C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F445D7E6-82CD-49B5-BFA1-9CDD841FF35C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F445D7E6-82CD-49B5-BFA1-9CDD841FF35C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67CBC824-A49E-4E9B-A947-360F3DFE65C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67CBC824-A49E-4E9B-A947-360F3DFE65C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67CBC824-A49E-4E9B-A947-360F3DFE65C3}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{67CBC824-A49E-4E9B-A947-360F3DFE65C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67CBC824-A49E-4E9B-A947-360F3DFE65C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67CBC824-A49E-4E9B-A947-360F3DFE65C3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{C13985AB-A483-485C-A7B5-1C69AA85E227}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C13985AB-A483-485C-A7B5-1C69AA85E227}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C13985AB-A483-485C-A7B5-1C69AA85E227}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C13985AB-A483-485C-A7B5-1C69AA85E227}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F445D7E6-82CD-49B5-BFA1-9CDD841FF35C} = {DA2A3A5E-9FAE-4EF9-B5F2-4CE4179C0B8B}
+		{67CBC824-A49E-4E9B-A947-360F3DFE65C3} = {DA2A3A5E-9FAE-4EF9-B5F2-4CE4179C0B8B}
+		{C13985AB-A483-485C-A7B5-1C69AA85E227} = {DA2A3A5E-9FAE-4EF9-B5F2-4CE4179C0B8B}
+	EndGlobalSection
+EndGlobal

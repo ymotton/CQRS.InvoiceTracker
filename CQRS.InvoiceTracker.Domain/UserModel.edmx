@@ -1,0 +1,310 @@
+﻿
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="InvoiceTrackerDomainModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="InvoiceTrackerDomainModelStoreContainer">
+          <EntitySet Name="Cities" EntityType="InvoiceTrackerDomainModel.Store.Cities" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Contacts" EntityType="InvoiceTrackerDomainModel.Store.Contacts" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Countries" EntityType="InvoiceTrackerDomainModel.Store.Countries" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="UserContacts" EntityType="InvoiceTrackerDomainModel.Store.UserContacts" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Users" EntityType="InvoiceTrackerDomainModel.Store.Users" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_Cities_Countries" Association="InvoiceTrackerDomainModel.Store.FK_Cities_Countries">
+            <End Role="Countries" EntitySet="Countries" />
+            <End Role="Cities" EntitySet="Cities" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Contacts_Cities" Association="InvoiceTrackerDomainModel.Store.FK_Contacts_Cities">
+            <End Role="Cities" EntitySet="Cities" />
+            <End Role="Contacts" EntitySet="Contacts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserContacts_Contacts" Association="InvoiceTrackerDomainModel.Store.FK_UserContacts_Contacts">
+            <End Role="Contacts" EntitySet="Contacts" />
+            <End Role="UserContacts" EntitySet="UserContacts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserContacts_Users" Association="InvoiceTrackerDomainModel.Store.FK_UserContacts_Users">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="UserContacts" EntitySet="UserContacts" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Cities">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Postalcode" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="CountryId" Type="uniqueidentifier" />
+        </EntityType>
+        <EntityType Name="Contacts">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Address" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="CityId" Type="uniqueidentifier" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" />
+          <Property Name="Telephone" Type="nvarchar" MaxLength="50" />
+          <Property Name="Fax" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Countries">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="255" />
+          <Property Name="Code" Type="nvarchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="UserContacts">
+          <Key>
+            <PropertyRef Name="UserId" />
+            <PropertyRef Name="ContactId" />
+          </Key>
+          <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ContactId" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Users">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Email" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK_Cities_Countries">
+          <End Role="Countries" Type="InvoiceTrackerDomainModel.Store.Countries" Multiplicity="0..1" />
+          <End Role="Cities" Type="InvoiceTrackerDomainModel.Store.Cities" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Countries">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Cities">
+              <PropertyRef Name="CountryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Contacts_Cities">
+          <End Role="Cities" Type="InvoiceTrackerDomainModel.Store.Cities" Multiplicity="0..1" />
+          <End Role="Contacts" Type="InvoiceTrackerDomainModel.Store.Contacts" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cities">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Contacts">
+              <PropertyRef Name="CityId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserContacts_Contacts">
+          <End Role="Contacts" Type="InvoiceTrackerDomainModel.Store.Contacts" Multiplicity="1" />
+          <End Role="UserContacts" Type="InvoiceTrackerDomainModel.Store.UserContacts" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Contacts">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UserContacts">
+              <PropertyRef Name="ContactId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserContacts_Users">
+          <End Role="Users" Type="InvoiceTrackerDomainModel.Store.Users" Multiplicity="1" />
+          <End Role="UserContacts" Type="InvoiceTrackerDomainModel.Store.UserContacts" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UserContacts">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="InvoiceTrackerDomainModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="UserEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Cities" EntityType="InvoiceTrackerDomainModel.City" />
+          <EntitySet Name="Contacts" EntityType="InvoiceTrackerDomainModel.Contact" />
+          <EntitySet Name="Countries" EntityType="InvoiceTrackerDomainModel.Country" />
+          <EntitySet Name="Users" EntityType="InvoiceTrackerDomainModel.User" />
+          <AssociationSet Name="FK_Cities_Countries" Association="InvoiceTrackerDomainModel.FK_Cities_Countries">
+            <End Role="Country" EntitySet="Countries" />
+            <End Role="City" EntitySet="Cities" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Contacts_Cities" Association="InvoiceTrackerDomainModel.FK_Contacts_Cities">
+            <End Role="City" EntitySet="Cities" />
+            <End Role="Contact" EntitySet="Contacts" />
+          </AssociationSet>
+          <AssociationSet Name="UserContacts" Association="InvoiceTrackerDomainModel.UserContacts">
+            <End Role="Contact" EntitySet="Contacts" />
+            <End Role="User" EntitySet="Users" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="City">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Guid" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Postalcode" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Guid" Name="CountryId" />
+          <NavigationProperty Name="Country" Relationship="InvoiceTrackerDomainModel.FK_Cities_Countries" FromRole="City" ToRole="Country" />
+          <NavigationProperty Name="Contacts" Relationship="InvoiceTrackerDomainModel.FK_Contacts_Cities" FromRole="City" ToRole="Contact" />
+        </EntityType>
+        <EntityType Name="Contact">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Guid" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Address" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Guid" Name="CityId" />
+          <Property Type="String" Name="Email" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Telephone" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Fax" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="City" Relationship="InvoiceTrackerDomainModel.FK_Contacts_Cities" FromRole="Contact" ToRole="City" />
+          <NavigationProperty Name="Users" Relationship="InvoiceTrackerDomainModel.UserContacts" FromRole="Contact" ToRole="User" />
+        </EntityType>
+        <EntityType Name="Country">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Guid" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Name" MaxLength="255" FixedLength="false" Unicode="true" a:SetterAccess="Public" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" />
+          <Property Type="String" Name="Code" MaxLength="10" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Cities" Relationship="InvoiceTrackerDomainModel.FK_Cities_Countries" FromRole="Country" ToRole="City" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Guid" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Email" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Contacts" Relationship="InvoiceTrackerDomainModel.UserContacts" FromRole="User" ToRole="Contact" />
+        </EntityType>
+        <Association Name="FK_Cities_Countries">
+          <End Type="InvoiceTrackerDomainModel.Country" Role="Country" Multiplicity="0..1" />
+          <End Type="InvoiceTrackerDomainModel.City" Role="City" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Country">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="City">
+              <PropertyRef Name="CountryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Contacts_Cities">
+          <End Type="InvoiceTrackerDomainModel.City" Role="City" Multiplicity="0..1" />
+          <End Type="InvoiceTrackerDomainModel.Contact" Role="Contact" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="City">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Contact">
+              <PropertyRef Name="CityId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="UserContacts">
+          <End Type="InvoiceTrackerDomainModel.Contact" Role="Contact" Multiplicity="*" />
+          <End Type="InvoiceTrackerDomainModel.User" Role="User" Multiplicity="*" />
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="InvoiceTrackerDomainModelStoreContainer" CdmEntityContainer="UserEntities">
+          <EntitySetMapping Name="Cities">
+            <EntityTypeMapping TypeName="InvoiceTrackerDomainModel.City">
+              <MappingFragment StoreEntitySet="Cities">
+                <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Postalcode" ColumnName="Postalcode" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Contacts">
+            <EntityTypeMapping TypeName="InvoiceTrackerDomainModel.Contact">
+              <MappingFragment StoreEntitySet="Contacts">
+                <ScalarProperty Name="Fax" ColumnName="Fax" />
+                <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="CityId" ColumnName="CityId" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Countries">
+            <EntityTypeMapping TypeName="InvoiceTrackerDomainModel.Country">
+              <MappingFragment StoreEntitySet="Countries">
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="InvoiceTrackerDomainModel.User">
+              <MappingFragment StoreEntitySet="Users">
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="UserContacts" TypeName="InvoiceTrackerDomainModel.UserContacts" StoreEntitySet="UserContacts">
+            <EndProperty Name="User">
+              <ScalarProperty Name="Id" ColumnName="UserId" />
+            </EndProperty>
+            <EndProperty Name="Contact">
+              <ScalarProperty Name="Id" ColumnName="ContactId" />
+            </EndProperty>
+          </AssociationSetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="UserModel">
+        <EntityTypeShape EntityType="InvoiceTrackerDomainModel.City" Width="1.5" PointX="3" PointY="1.125" Height="2.1725878906249996" />
+        <EntityTypeShape EntityType="InvoiceTrackerDomainModel.Contact" Width="1.5" PointX="5.25" PointY="1" Height="2.5571907552083326" />
+        <EntityTypeShape EntityType="InvoiceTrackerDomainModel.Country" Width="1.5" PointX="0.75" PointY="1.375" Height="1.7879850260416674" />
+        <EntityTypeShape EntityType="InvoiceTrackerDomainModel.User" Width="1.5" PointX="7.5" PointY="1.375" Height="1.7879850260416674" />
+        <AssociationConnector Association="InvoiceTrackerDomainModel.FK_Cities_Countries">
+          <ConnectorPoint PointX="2.25" PointY="2.2689925130208337" />
+          <ConnectorPoint PointX="3" PointY="2.2689925130208337" />
+        </AssociationConnector>
+        <AssociationConnector Association="InvoiceTrackerDomainModel.FK_Contacts_Cities">
+          <ConnectorPoint PointX="4.5" PointY="2.2112939453125" />
+          <ConnectorPoint PointX="5.25" PointY="2.2112939453125" />
+        </AssociationConnector>
+        <AssociationConnector Association="InvoiceTrackerDomainModel.UserContacts">
+          <ConnectorPoint PointX="6.75" PointY="2.2689925130208337" />
+          <ConnectorPoint PointX="7.5" PointY="2.2689925130208337" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>
