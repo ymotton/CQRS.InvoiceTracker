@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="e23c13f7-cbf4-401c-a51b-39f878ab5f11" name="Yannick@QUADVERTEX 2011-05-22 23:58:28" runUser="QuadVertex\Yannick" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="cdd1f0be-8b79-4576-88db-88bf0584423b">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Yannick_QUADVERTEX 2011-05-22 23_58_28">
+      <DeploymentItem filename="C:\Program Files (x86)\TechTalk\SpecFlow\TechTalk.SpecFlow.dll" />
+      <DeploymentItem filename="C:\Code\github\CQRS.InvoiceTracker\packages\WatiN.2.1.0\lib\net40\WatiN.Core.dll" />
+      <DeploymentItem filename="C:\Code\github\CQRS.InvoiceTracker\CQRS.InvoiceTracker.Web\bin\CQRS.InvoiceTracker.Web.dll" />
+      <DeploymentItem filename="C:\Code\github\CQRS.InvoiceTracker\CQRS.InvoiceTracker.FeatureHelpers\bin\Debug\CQRS.InvoiceTracker.FeatureHelpers.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-05-22T23:58:28.8498843+02:00" queuing="2011-05-22T23:58:28.8848863+02:00" start="2011-05-22T23:58:28.8968870+02:00" finish="2011-05-22T23:58:41.6066140+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="4" executed="4" passed="2" error="0" failed="2" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="LoginOnWithTheNewlyCreatedAccount" storage="c:\code\github\cqrs.invoicetracker\cqrs.invoicetracker.features\bin\debug\cqrs.invoicetracker.features.dll" id="c941db2b-6719-08cb-0cd3-b81804146f73">
+      <Description>Login On with the newly created account</Description>
+      <Execution id="b09a7eb9-6793-4783-9e38-cb8da8b9a27e" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Account Management</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Code/github/CQRS.InvoiceTracker/CQRS.InvoiceTracker.Features/bin/Debug/CQRS.InvoiceTracker.Features.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CQRS.InvoiceTracker.Features.AccountManagementFeature, CQRS.InvoiceTracker.Features, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LoginOnWithTheNewlyCreatedAccount" />
+    </UnitTest>
+    <UnitTest name="CreatingAnAccount" storage="c:\code\github\cqrs.invoicetracker\cqrs.invoicetracker.features\bin\debug\cqrs.invoicetracker.features.dll" id="4225542c-1a3b-0977-0d8c-728f858161c1">
+      <Description>Creating an account</Description>
+      <Execution id="925f62bf-3232-4fba-b5e0-a7be3baa217a" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Account Management</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Code/github/CQRS.InvoiceTracker/CQRS.InvoiceTracker.Features/bin/Debug/CQRS.InvoiceTracker.Features.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CQRS.InvoiceTracker.Features.AccountManagementFeature, CQRS.InvoiceTracker.Features, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreatingAnAccount" />
+    </UnitTest>
+    <UnitTest name="GoingToTheLogOnPage" storage="c:\code\github\cqrs.invoicetracker\cqrs.invoicetracker.features\bin\debug\cqrs.invoicetracker.features.dll" id="fdd8b786-e79e-647b-dd2a-c50c0f1d18c4">
+      <Description>Going to the "LogOn" page</Description>
+      <Execution id="24ca3826-483c-48af-ab10-4c932bfc7d54" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Account Management</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Code/github/CQRS.InvoiceTracker/CQRS.InvoiceTracker.Features/bin/Debug/CQRS.InvoiceTracker.Features.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CQRS.InvoiceTracker.Features.AccountManagementFeature, CQRS.InvoiceTracker.Features, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GoingToTheLogOnPage" />
+    </UnitTest>
+    <UnitTest name="GoingToTheAccountPage" storage="c:\code\github\cqrs.invoicetracker\cqrs.invoicetracker.features\bin\debug\cqrs.invoicetracker.features.dll" id="6eac4922-8c19-60d4-a2d5-1b59753c34ec">
+      <Description>Going to the "Account" page</Description>
+      <Execution id="5e523a9e-f342-4bdc-afa0-4137f34eff4c" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Account Management</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Code/github/CQRS.InvoiceTracker/CQRS.InvoiceTracker.Features/bin/Debug/CQRS.InvoiceTracker.Features.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CQRS.InvoiceTracker.Features.AccountManagementFeature, CQRS.InvoiceTracker.Features, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GoingToTheAccountPage" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="4225542c-1a3b-0977-0d8c-728f858161c1" executionId="925f62bf-3232-4fba-b5e0-a7be3baa217a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6eac4922-8c19-60d4-a2d5-1b59753c34ec" executionId="5e523a9e-f342-4bdc-afa0-4137f34eff4c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c941db2b-6719-08cb-0cd3-b81804146f73" executionId="b09a7eb9-6793-4783-9e38-cb8da8b9a27e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fdd8b786-e79e-647b-dd2a-c50c0f1d18c4" executionId="24ca3826-483c-48af-ab10-4c932bfc7d54" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="925f62bf-3232-4fba-b5e0-a7be3baa217a" testId="4225542c-1a3b-0977-0d8c-728f858161c1" testName="CreatingAnAccount" computerName="QUADVERTEX" duration="00:00:03.7549931" startTime="2011-05-22T23:58:28.8988871+02:00" endTime="2011-05-22T23:58:32.8411126+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="925f62bf-3232-4fba-b5e0-a7be3baa217a">
+      <Output>
+        <StdOut>Given I am on the "/Account/Create/" page
+-&gt; done: AccountSteps.Given_IAmOnThePage("/Account/Create/") (0,0s)
+When I input "validusername" into the "UserName" field
+-&gt; error: Timeout while waiting 2 seconds for element to show up.
+And I input "valid@email.com" into the "Email" field
+-&gt; skipped because of previous errors
+And I input "validpassword" into the "Password" field
+-&gt; skipped because of previous errors
+And I input "validpassword" into the "ConfirmPassword" field
+-&gt; skipped because of previous errors
+And I click the "Register" button
+-&gt; skipped because of previous errors
+Then I should see the "Home Page" page show up
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Test method CQRS.InvoiceTracker.Features.AccountManagementFeature.CreatingAnAccount threw exception: 
+WatiN.Core.Exceptions.TimeoutException: Timeout while waiting 2 seconds for element to show up.</Message>
+          <StackTrace>    at WatiN.Core.UtilityClasses.TryFuncUntilTimeOut.ThrowTimeOutException(Exception lastException, String message)
+   at WatiN.Core.UtilityClasses.TryFuncUntilTimeOut.HandleTimeOut()
+   at WatiN.Core.UtilityClasses.TryFuncUntilTimeOut.Try[T](DoFunc`1 func)
+   at WatiN.Core.Element.WaitUntilExistsOrNot(Int32 timeout, Boolean waitUntilExists)
+   at WatiN.Core.Element.WaitUntilExists(Int32 timeout)
+   at CQRS.InvoiceTracker.Features.StepBase.When_IInputIntoTheField(String value, String fieldName) in C:\Code\github\CQRS.InvoiceTracker\CQRS.InvoiceTracker.FeatureHelpers\StepBase.cs:line 43
+   at lambda_method(Closure , String , String )
+   at TechTalk.SpecFlow.Bindings.MethodBinding.InvokeAction(Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   at TechTalk.SpecFlow.TestRunner.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.TestRunner.ExecuteStep(StepArgs stepArgs)
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at CQRS.InvoiceTracker.Features.AccountManagementFeature.CreatingAnAccount() in c:\Code\github\CQRS.InvoiceTracker\CQRS.InvoiceTracker.Features\Account.feature:line 18
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5e523a9e-f342-4bdc-afa0-4137f34eff4c" testId="6eac4922-8c19-60d4-a2d5-1b59753c34ec" testName="GoingToTheAccountPage" computerName="QUADVERTEX" duration="00:00:01.9006304" startTime="2011-05-22T23:58:32.8421127+02:00" endTime="2011-05-22T23:58:34.7452215+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5e523a9e-f342-4bdc-afa0-4137f34eff4c">
+      <Output>
+        <StdOut>Given I am on the "/" page
+-&gt; done: AccountSteps.Given_IAmOnThePage("/") (0,1s)
+When I click the "Register" link
+-&gt; done: AccountSteps.When_IPressTheLink("Register") (0,1s)
+Then I should see the "Register" page show up
+-&gt; done: AccountSteps.Then_IShouldSeeTheCreateUserPageShowUp("Register") (0,0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="b09a7eb9-6793-4783-9e38-cb8da8b9a27e" testId="c941db2b-6719-08cb-0cd3-b81804146f73" testName="LoginOnWithTheNewlyCreatedAccount" computerName="QUADVERTEX" duration="00:00:05.1307537" startTime="2011-05-22T23:58:34.7462216+02:00" endTime="2011-05-22T23:58:39.8795152+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b09a7eb9-6793-4783-9e38-cb8da8b9a27e">
+      <Output>
+        <StdOut>Given I am on the "/Account/LogOn" page
+-&gt; done: AccountSteps.Given_IAmOnThePage("/Account/LogOn") (0,1s)
+When I input "validusername" into the "UserName" field
+-&gt; done: AccountSteps.When_IInputIntoTheField("validusername", "UserName") (1,7s)
+And I input "validpassword" into the "Password" field
+-&gt; done: AccountSteps.When_IInputIntoTheField("validpassword", "Password") (1,7s)
+And I click the "Log On" button
+-&gt; done: AccountSteps.When_IPressTheButton("Log On") (0,1s)
+Then I should see the "Register" page show up
+-&gt; error: Assert.IsTrue failed. The Title does not match</StdOut>
+        <ErrorInfo>
+          <Message>Assert.IsTrue failed. The Title does not match</Message>
+          <StackTrace>   at CQRS.InvoiceTracker.Features.StepBase.Then_IShouldSeeTheCreateUserPageShowUp(String pageTitle) in C:\Code\github\CQRS.InvoiceTracker\CQRS.InvoiceTracker.FeatureHelpers\StepBase.cs:line 51
+   at lambda_method(Closure , String )
+   at TechTalk.SpecFlow.Bindings.MethodBinding.InvokeAction(Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   at TechTalk.SpecFlow.TestRunner.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.TestRunner.ExecuteStep(StepArgs stepArgs)
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at CQRS.InvoiceTracker.Features.AccountManagementFeature.LoginOnWithTheNewlyCreatedAccount() in c:\Code\github\CQRS.InvoiceTracker\CQRS.InvoiceTracker.Features\Account.feature:line 30
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="24ca3826-483c-48af-ab10-4c932bfc7d54" testId="fdd8b786-e79e-647b-dd2a-c50c0f1d18c4" testName="GoingToTheLogOnPage" computerName="QUADVERTEX" duration="00:00:01.6966490" startTime="2011-05-22T23:58:39.8805152+02:00" endTime="2011-05-22T23:58:41.5796124+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="24ca3826-483c-48af-ab10-4c932bfc7d54">
+      <Output>
+        <StdOut>Given I am on the "/" page
+-&gt; done: AccountSteps.Given_IAmOnThePage("/") (0,1s)
+When I click the "Log On" link
+-&gt; done: AccountSteps.When_IPressTheLink("Log On") (0,1s)
+Then I should see the "Log On" page show up
+-&gt; done: AccountSteps.Then_IShouldSeeTheCreateUserPageShowUp("Log On") (0,0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

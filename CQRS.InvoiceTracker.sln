@@ -13,7 +13,23 @@ Project("{C8D11400-126E-41CD-887F-60BD40844F9E}") = "CQRS.InvoiceTracker.Domain.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRS.InvoiceTracker.CommandHandlers", "CQRS.InvoiceTracker.CommandHandlers\CQRS.InvoiceTracker.CommandHandlers.csproj", "{C13985AB-A483-485C-A7B5-1C69AA85E227}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRS.InvoiceTracker.Web", "CQRS.InvoiceTracker.Web\CQRS.InvoiceTracker.Web.csproj", "{E8D4412C-1A41-42F0-A105-5B1A76D10A6C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{363DE5EF-808C-447A-ACA7-96D872B6AAF8}"
+	ProjectSection(SolutionItems) = preProject
+		CQRS.InvoiceTracker.vsmdi = CQRS.InvoiceTracker.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRS.InvoiceTracker.Features", "CQRS.InvoiceTracker.Features\CQRS.InvoiceTracker.Features.csproj", "{334B1E3B-DE35-4747-9A71-5DE85B30F050}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRS.InvoiceTracker.FeatureHelpers", "CQRS.InvoiceTracker.FeatureHelpers\CQRS.InvoiceTracker.FeatureHelpers.csproj", "{B3E52D48-1354-4189-ADDE-22AC9DE0E881}"
+EndProject
 Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = CQRS.InvoiceTracker.vsmdi
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -33,11 +49,27 @@ Global
 		{C13985AB-A483-485C-A7B5-1C69AA85E227}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C13985AB-A483-485C-A7B5-1C69AA85E227}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C13985AB-A483-485C-A7B5-1C69AA85E227}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8D4412C-1A41-42F0-A105-5B1A76D10A6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8D4412C-1A41-42F0-A105-5B1A76D10A6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8D4412C-1A41-42F0-A105-5B1A76D10A6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8D4412C-1A41-42F0-A105-5B1A76D10A6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{334B1E3B-DE35-4747-9A71-5DE85B30F050}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{334B1E3B-DE35-4747-9A71-5DE85B30F050}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{334B1E3B-DE35-4747-9A71-5DE85B30F050}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{334B1E3B-DE35-4747-9A71-5DE85B30F050}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3E52D48-1354-4189-ADDE-22AC9DE0E881}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3E52D48-1354-4189-ADDE-22AC9DE0E881}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3E52D48-1354-4189-ADDE-22AC9DE0E881}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3E52D48-1354-4189-ADDE-22AC9DE0E881}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{E8D4412C-1A41-42F0-A105-5B1A76D10A6C} = {B62BC2DD-A017-4B8B-8FFC-8390E327D778}
+		{363DE5EF-808C-447A-ACA7-96D872B6AAF8} = {B62BC2DD-A017-4B8B-8FFC-8390E327D778}
+		{334B1E3B-DE35-4747-9A71-5DE85B30F050} = {B62BC2DD-A017-4B8B-8FFC-8390E327D778}
+		{B3E52D48-1354-4189-ADDE-22AC9DE0E881} = {B62BC2DD-A017-4B8B-8FFC-8390E327D778}
 		{F445D7E6-82CD-49B5-BFA1-9CDD841FF35C} = {DA2A3A5E-9FAE-4EF9-B5F2-4CE4179C0B8B}
 		{67CBC824-A49E-4E9B-A947-360F3DFE65C3} = {DA2A3A5E-9FAE-4EF9-B5F2-4CE4179C0B8B}
 		{C13985AB-A483-485C-A7B5-1C69AA85E227} = {DA2A3A5E-9FAE-4EF9-B5F2-4CE4179C0B8B}

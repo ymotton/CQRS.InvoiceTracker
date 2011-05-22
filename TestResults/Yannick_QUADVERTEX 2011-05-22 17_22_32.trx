@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="a2f3fd80-9947-45bc-8f41-c9394dcd33dd" name="Yannick@QUADVERTEX 2011-05-22 17:22:32" runUser="QuadVertex\Yannick" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="cdd1f0be-8b79-4576-88db-88bf0584423b">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Yannick_QUADVERTEX 2011-05-22 17_22_32">
+      <DeploymentItem filename="C:\Program Files (x86)\TechTalk\SpecFlow\TechTalk.SpecFlow.dll" />
+      <DeploymentItem filename="C:\Code\github\CQRS.InvoiceTracker\packages\WatiN.2.1.0\lib\net40\WatiN.Core.dll" />
+      <DeploymentItem filename="C:\Code\github\CQRS.InvoiceTracker\CQRS.InvoiceTracker.Web\bin\CQRS.InvoiceTracker.Web.dll" />
+      <DeploymentItem filename="C:\Code\github\CQRS.InvoiceTracker\CQRS.InvoiceTracker.FeatureHelpers\bin\Debug\CQRS.InvoiceTracker.FeatureHelpers.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-05-22T17:22:32.2110823+02:00" queuing="2011-05-22T17:22:32.2440842+02:00" start="2011-05-22T17:22:32.2480844+02:00" finish="2011-05-22T17:22:39.4714976+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="4" executed="4" passed="3" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="CancellingUserCreation" storage="c:\code\github\cqrs.invoicetracker\cqrs.invoicetracker.features\bin\debug\cqrs.invoicetracker.features.dll" id="023a82ed-e243-63b2-f6c0-b312905f7529">
+      <Description>Cancelling user creation</Description>
+      <Execution id="0e0894a2-bf01-40b6-b157-d2891d654f39" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UserManagement</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Code/github/CQRS.InvoiceTracker/CQRS.InvoiceTracker.Features/bin/Debug/CQRS.InvoiceTracker.Features.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CQRS.InvoiceTracker.Features.UserManagementFeature, CQRS.InvoiceTracker.Features, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CancellingUserCreation" />
+    </UnitTest>
+    <UnitTest name="CreatingAUser" storage="c:\code\github\cqrs.invoicetracker\cqrs.invoicetracker.features\bin\debug\cqrs.invoicetracker.features.dll" id="5049e050-f96d-babc-b445-d5afaec5376c">
+      <Description>Creating a user</Description>
+      <Execution id="7e8dad6a-3803-42b0-b663-dea6cf1ca495" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UserManagement</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Code/github/CQRS.InvoiceTracker/CQRS.InvoiceTracker.Features/bin/Debug/CQRS.InvoiceTracker.Features.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CQRS.InvoiceTracker.Features.UserManagementFeature, CQRS.InvoiceTracker.Features, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreatingAUser" />
+    </UnitTest>
+    <UnitTest name="GoingToTheUserPage" storage="c:\code\github\cqrs.invoicetracker\cqrs.invoicetracker.features\bin\debug\cqrs.invoicetracker.features.dll" id="30a51848-a79d-45b7-84a9-1bc7a85a1b2f">
+      <Description>Going to the "/User/" page</Description>
+      <Execution id="b32c06f9-3b51-40a6-bcec-db73539ca1b3" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UserManagement</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Code/github/CQRS.InvoiceTracker/CQRS.InvoiceTracker.Features/bin/Debug/CQRS.InvoiceTracker.Features.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CQRS.InvoiceTracker.Features.UserManagementFeature, CQRS.InvoiceTracker.Features, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GoingToTheUserPage" />
+    </UnitTest>
+    <UnitTest name="GoingToTheUserCreatePage" storage="c:\code\github\cqrs.invoicetracker\cqrs.invoicetracker.features\bin\debug\cqrs.invoicetracker.features.dll" id="289a569e-4c77-a69a-5a67-307fe9ac9aef">
+      <Description>Going to the "/User/Create/" page</Description>
+      <Execution id="f66c4ab4-baf2-4c1c-92cf-4e3272949dc9" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UserManagement</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Code/github/CQRS.InvoiceTracker/CQRS.InvoiceTracker.Features/bin/Debug/CQRS.InvoiceTracker.Features.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CQRS.InvoiceTracker.Features.UserManagementFeature, CQRS.InvoiceTracker.Features, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GoingToTheUserCreatePage" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="023a82ed-e243-63b2-f6c0-b312905f7529" executionId="0e0894a2-bf01-40b6-b157-d2891d654f39" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="289a569e-4c77-a69a-5a67-307fe9ac9aef" executionId="f66c4ab4-baf2-4c1c-92cf-4e3272949dc9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="30a51848-a79d-45b7-84a9-1bc7a85a1b2f" executionId="b32c06f9-3b51-40a6-bcec-db73539ca1b3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5049e050-f96d-babc-b445-d5afaec5376c" executionId="7e8dad6a-3803-42b0-b663-dea6cf1ca495" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="0e0894a2-bf01-40b6-b157-d2891d654f39" testId="023a82ed-e243-63b2-f6c0-b312905f7529" testName="CancellingUserCreation" computerName="QUADVERTEX" duration="00:00:01.9335013" startTime="2011-05-22T17:22:32.2500845+02:00" endTime="2011-05-22T17:22:34.3742060+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0e0894a2-bf01-40b6-b157-d2891d654f39">
+      <Output>
+        <StdOut>Given I am on the "/User/Create/" page
+-&gt; done: UserSteps.Given_IAmOnThePage("/User/Create/") (0,1s)
+When I click the "Cancel" link
+-&gt; done: UserSteps.When_IPressTheLink("Cancel") (0,2s)
+Then I should see the "User Management" page show up
+-&gt; done: UserSteps.Then_IShouldSeeTheCreateUserPageShowUp("User Management") (0,0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f66c4ab4-baf2-4c1c-92cf-4e3272949dc9" testId="289a569e-4c77-a69a-5a67-307fe9ac9aef" testName="GoingToTheUserCreatePage" computerName="QUADVERTEX" duration="00:00:01.6898908" startTime="2011-05-22T17:22:34.3752061+02:00" endTime="2011-05-22T17:22:36.0673029+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f66c4ab4-baf2-4c1c-92cf-4e3272949dc9">
+      <Output>
+        <StdOut>Given I am on the "/User/" page
+-&gt; done: UserSteps.Given_IAmOnThePage("/User/") (0,1s)
+When I click the "Create User" link
+-&gt; done: UserSteps.When_IPressTheLink("Create User") (0,1s)
+Then I should see the "Create User" page show up
+-&gt; done: UserSteps.Then_IShouldSeeTheCreateUserPageShowUp("Create User") (0,0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="b32c06f9-3b51-40a6-bcec-db73539ca1b3" testId="30a51848-a79d-45b7-84a9-1bc7a85a1b2f" testName="GoingToTheUserPage" computerName="QUADVERTEX" duration="00:00:01.6878476" startTime="2011-05-22T17:22:36.0683029+02:00" endTime="2011-05-22T17:22:37.7583996+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b32c06f9-3b51-40a6-bcec-db73539ca1b3">
+      <Output>
+        <StdOut>Given I am on the "/" page
+-&gt; done: UserSteps.Given_IAmOnThePage("/") (0,1s)
+When I click the "User" link
+-&gt; done: UserSteps.When_IPressTheLink("User") (0,1s)
+Then I should see the "User Management" page show up
+-&gt; done: UserSteps.Then_IShouldSeeTheCreateUserPageShowUp("User Management") (0,0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7e8dad6a-3803-42b0-b663-dea6cf1ca495" testId="5049e050-f96d-babc-b445-d5afaec5376c" testName="CreatingAUser" computerName="QUADVERTEX" duration="00:00:01.6962614" startTime="2011-05-22T17:22:37.7593996+02:00" endTime="2011-05-22T17:22:39.4584968+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7e8dad6a-3803-42b0-b663-dea6cf1ca495">
+      <Output>
+        <StdOut>Given I am on the "/User/Create/" page
+-&gt; done: UserSteps.Given_IAmOnThePage("/User/Create/") (0,1s)
+When I insert valid user information
+-&gt; done: UserSteps.When_IInsertValidUserInformation() (0,0s)
+And I click the "Save" link
+-&gt; done: UserSteps.When_IPressTheLink("Save") (0,1s)
+Then I should see the "User Management" page show up
+-&gt; error: Assert.IsTrue failed. The Title does not match</StdOut>
+        <ErrorInfo>
+          <Message>Assert.IsTrue failed. The Title does not match</Message>
+          <StackTrace>   at CQRS.InvoiceTracker.Features.StepBase.Then_IShouldSeeTheCreateUserPageShowUp(String pageTitle) in C:\Code\github\CQRS.InvoiceTracker\CQRS.InvoiceTracker.FeatureHelpers\StepBase.cs:line 44
+   at lambda_method(Closure , String )
+   at TechTalk.SpecFlow.Bindings.MethodBinding.InvokeAction(Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   at TechTalk.SpecFlow.TestRunner.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.TestRunner.ExecuteStep(StepArgs stepArgs)
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at CQRS.InvoiceTracker.Features.UserManagementFeature.CreatingAUser() in c:\Code\github\CQRS.InvoiceTracker\CQRS.InvoiceTracker.Features\User.feature:line 20
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

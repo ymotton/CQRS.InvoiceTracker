@@ -14,9 +14,17 @@ namespace CQRS.InvoiceTracker.Domain
     
     public partial class User
     {
-        public User()
+        public User(string name, string email, IEnumerable<Contact> contacts = null)
+            : this(Guid.NewGuid(), name, email, contacts)
         {
-            this.Contacts = new HashSet<Contact>();
+        }
+
+        public User(Guid id, string name, string email, IEnumerable<Contact> contacts = null)
+        {
+            Id = id;
+            Name = name;
+            Email = email;
+            this.Contacts = new HashSet<Contact>(contacts ?? new Contact[] {} );
         }
     
         public System.Guid Id { get; set; }

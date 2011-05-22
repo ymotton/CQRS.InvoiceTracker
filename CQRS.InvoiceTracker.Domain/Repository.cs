@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Data;
-using System.Linq;
-using System.Data.Entity;
 using System.Collections.Generic;
+using System.Data.Entity;
+using System.Linq;
 using System.Linq.Expressions;
 
 namespace CQRS.InvoiceTracker.Domain
@@ -16,6 +15,11 @@ namespace CQRS.InvoiceTracker.Domain
             Context = new DbContext("name=DomainModel");
         }
 
+        public bool Any(Expression<Func<TAggregate, bool>> predicate)
+        {
+            return Context.Set(typeof(TAggregate)).OfType<TAggregate>().Where(predicate).Any();
+        }
+
         public TAggregate GetById(Guid id)
         {
             return (TAggregate)Context.Set(typeof(TAggregate)).Find(id);
@@ -24,14 +28,6 @@ namespace CQRS.InvoiceTracker.Domain
         public IEnumerable<TAggregate> GetFiltered(Expression<Func<TAggregate, bool>> predicate)
         {
             return Context.Set(typeof (TAggregate)).OfType<TAggregate>().Where(predicate).ToList();
-        }
-
-        public bool Add(TAggregate aggregate) 
-        {
-            Context.Set(typeof (TAggregate)).Attach(aggregate);
-            Context.Entry(aggregate).State = EntityState.Added;
-
-            return true;
         }
     }
 }

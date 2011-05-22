@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="e3b4e085-59bf-4d9e-b3e5-26e10098560f" name="Yannick@QUADVERTEX 2011-05-22 23:46:05" runUser="QuadVertex\Yannick" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="cdd1f0be-8b79-4576-88db-88bf0584423b">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Yannick_QUADVERTEX 2011-05-22 23_46_05">
+      <DeploymentItem filename="C:\Program Files (x86)\TechTalk\SpecFlow\TechTalk.SpecFlow.dll" />
+      <DeploymentItem filename="C:\Code\github\CQRS.InvoiceTracker\packages\WatiN.2.1.0\lib\net40\WatiN.Core.dll" />
+      <DeploymentItem filename="C:\Code\github\CQRS.InvoiceTracker\CQRS.InvoiceTracker.Web\bin\CQRS.InvoiceTracker.Web.dll" />
+      <DeploymentItem filename="C:\Code\github\CQRS.InvoiceTracker\CQRS.InvoiceTracker.FeatureHelpers\bin\Debug\CQRS.InvoiceTracker.FeatureHelpers.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-05-22T23:46:05.8553875+02:00" queuing="2011-05-22T23:46:06.8184425+02:00" start="2011-05-22T23:46:06.9484500+02:00" finish="2011-05-22T23:46:36.6521489+02:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="4" executed="4" passed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="2" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="QUADVERTEX" outcome="Error" timestamp="2011-05-22T23:46:36.6511489+02:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="LoginOnWithTheNewlyCreatedAccount" storage="c:\code\github\cqrs.invoicetracker\cqrs.invoicetracker.features\bin\debug\cqrs.invoicetracker.features.dll" id="c941db2b-6719-08cb-0cd3-b81804146f73">
+      <Description>Login On with the newly created account</Description>
+      <Execution id="2a130145-aca0-4579-ba1e-1e062167cce3" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Account Management</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Code/github/CQRS.InvoiceTracker/CQRS.InvoiceTracker.Features/bin/Debug/CQRS.InvoiceTracker.Features.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CQRS.InvoiceTracker.Features.AccountManagementFeature, CQRS.InvoiceTracker.Features, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LoginOnWithTheNewlyCreatedAccount" />
+    </UnitTest>
+    <UnitTest name="CreatingAnAccount" storage="c:\code\github\cqrs.invoicetracker\cqrs.invoicetracker.features\bin\debug\cqrs.invoicetracker.features.dll" id="4225542c-1a3b-0977-0d8c-728f858161c1">
+      <Description>Creating an account</Description>
+      <Execution id="d0cbb8e2-fb8d-4327-8c79-01d41e81b8e3" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Account Management</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Code/github/CQRS.InvoiceTracker/CQRS.InvoiceTracker.Features/bin/Debug/CQRS.InvoiceTracker.Features.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CQRS.InvoiceTracker.Features.AccountManagementFeature, CQRS.InvoiceTracker.Features, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreatingAnAccount" />
+    </UnitTest>
+    <UnitTest name="GoingToTheLogOnPage" storage="c:\code\github\cqrs.invoicetracker\cqrs.invoicetracker.features\bin\debug\cqrs.invoicetracker.features.dll" id="fdd8b786-e79e-647b-dd2a-c50c0f1d18c4">
+      <Description>Going to the "LogOn" page</Description>
+      <Execution id="334d4084-3196-4488-98f4-08e6590046e1" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Account Management</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Code/github/CQRS.InvoiceTracker/CQRS.InvoiceTracker.Features/bin/Debug/CQRS.InvoiceTracker.Features.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CQRS.InvoiceTracker.Features.AccountManagementFeature, CQRS.InvoiceTracker.Features, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GoingToTheLogOnPage" />
+    </UnitTest>
+    <UnitTest name="GoingToTheAccountPage" storage="c:\code\github\cqrs.invoicetracker\cqrs.invoicetracker.features\bin\debug\cqrs.invoicetracker.features.dll" id="6eac4922-8c19-60d4-a2d5-1b59753c34ec">
+      <Description>Going to the "Account" page</Description>
+      <Execution id="43a555ea-074b-42ea-905a-093d817eaeba" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Account Management</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Code/github/CQRS.InvoiceTracker/CQRS.InvoiceTracker.Features/bin/Debug/CQRS.InvoiceTracker.Features.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CQRS.InvoiceTracker.Features.AccountManagementFeature, CQRS.InvoiceTracker.Features, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GoingToTheAccountPage" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="4225542c-1a3b-0977-0d8c-728f858161c1" executionId="d0cbb8e2-fb8d-4327-8c79-01d41e81b8e3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6eac4922-8c19-60d4-a2d5-1b59753c34ec" executionId="43a555ea-074b-42ea-905a-093d817eaeba" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c941db2b-6719-08cb-0cd3-b81804146f73" executionId="2a130145-aca0-4579-ba1e-1e062167cce3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fdd8b786-e79e-647b-dd2a-c50c0f1d18c4" executionId="334d4084-3196-4488-98f4-08e6590046e1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="d0cbb8e2-fb8d-4327-8c79-01d41e81b8e3" testId="4225542c-1a3b-0977-0d8c-728f858161c1" testName="CreatingAnAccount" computerName="QUADVERTEX" duration="00:00:04.3356835" startTime="2011-05-22T23:46:07.0804575+02:00" endTime="2011-05-22T23:46:12.6807779+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d0cbb8e2-fb8d-4327-8c79-01d41e81b8e3">
+      <Output>
+        <StdOut>Given I am on the "/Account/Create/" page
+-&gt; done: AccountSteps.Given_IAmOnThePage("/Account/Create/") (0,1s)
+When I insert valid user information
+-&gt; No matching step definition found for the step. Use the following code to create one:
+    [Binding]
+    public class StepDefinitions
+    {
+        [When(@"I insert valid user information")]
+        public void WhenIInsertValidUserInformation()
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }
+
+And I click the "Register" button
+-&gt; skipped because of previous errors
+Then I should see the "Home Page" page show up
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. No matching step definition found for one or more steps.
+[Binding]
+public class StepDefinitions
+{
+    [When(@"I insert valid user information")]
+    public void WhenIInsertValidUserInformation()
+    {
+        ScenarioContext.Current.Pending();
+    }
+}
+</Message>
+          <StackTrace>   at lambda_method(Closure , String , Object[] )
+   at TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestInconclusive(String message)
+   at TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(TestStatus testStatus, String message)
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at CQRS.InvoiceTracker.Features.AccountManagementFeature.CreatingAnAccount() in c:\Code\github\CQRS.InvoiceTracker\CQRS.InvoiceTracker.Features\Account.feature:line 15
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="43a555ea-074b-42ea-905a-093d817eaeba" testId="6eac4922-8c19-60d4-a2d5-1b59753c34ec" testName="GoingToTheAccountPage" computerName="QUADVERTEX" duration="00:00:08.2774647" startTime="2011-05-22T23:46:12.6877783+02:00" endTime="2011-05-22T23:46:20.9702520+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="43a555ea-074b-42ea-905a-093d817eaeba">
+      <Output>
+        <StdOut>Given I am on the "/" page
+-&gt; done: AccountSteps.Given_IAmOnThePage("/") (0,1s)
+When I click the "Register" link
+-&gt; done: AccountSteps.When_IPressTheLink("Register") (0,6s)
+Then I should see the "Register" page show up
+-&gt; done: AccountSteps.Then_IShouldSeeTheCreateUserPageShowUp("Register") (6,1s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2a130145-aca0-4579-ba1e-1e062167cce3" testId="c941db2b-6719-08cb-0cd3-b81804146f73" testName="LoginOnWithTheNewlyCreatedAccount" computerName="QUADVERTEX" duration="00:00:05.5129578" startTime="2011-05-22T23:46:20.9752523+02:00" endTime="2011-05-22T23:46:26.5145691+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2a130145-aca0-4579-ba1e-1e062167cce3">
+      <Output>
+        <StdOut>Given I am on the "/Account/LogOn" page
+-&gt; done: AccountSteps.Given_IAmOnThePage("/Account/LogOn") (0,1s)
+When I input valid log on information
+-&gt; No matching step definition found for the step. Use the following code to create one:
+    [Binding]
+    public class StepDefinitions
+    {
+        [When(@"I input valid log on information")]
+        public void WhenIInputValidLogOnInformation()
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }
+
+And I click the "Log On" button
+-&gt; skipped because of previous errors
+Then I should see the "Register" page show up
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. No matching step definition found for one or more steps.
+[Binding]
+public class StepDefinitions
+{
+    [When(@"I input valid log on information")]
+    public void WhenIInputValidLogOnInformation()
+    {
+        ScenarioContext.Current.Pending();
+    }
+}
+</Message>
+          <StackTrace>   at lambda_method(Closure , String , Object[] )
+   at TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestInconclusive(String message)
+   at TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(TestStatus testStatus, String message)
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at CQRS.InvoiceTracker.Features.AccountManagementFeature.LoginOnWithTheNewlyCreatedAccount() in c:\Code\github\CQRS.InvoiceTracker\CQRS.InvoiceTracker.Features\Account.feature:line 26
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="334d4084-3196-4488-98f4-08e6590046e1" testId="fdd8b786-e79e-647b-dd2a-c50c0f1d18c4" testName="GoingToTheLogOnPage" computerName="QUADVERTEX" duration="00:00:10.1305794" startTime="2011-05-22T23:46:26.5215695+02:00" endTime="2011-05-22T23:46:36.6521489+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="334d4084-3196-4488-98f4-08e6590046e1">
+    </UnitTestResult>
+  </Results>
+</TestRun>

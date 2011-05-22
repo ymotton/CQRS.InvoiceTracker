@@ -33,16 +33,25 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Transactions" />
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChainedHandler.cs" />
     <Compile Include="Command.cs" />
     <Compile Include="CommandHandler.cs" />
+    <Compile Include="CreateUserCommand.cs" />
+    <Compile Include="CreateUserCommandHandler.cs" />
+    <Compile Include="IHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TransactionHandler.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CQRS.InvoiceTracker.Domain\CQRS.InvoiceTracker.Domain.csproj">
+      <Project>{F445D7E6-82CD-49B5-BFA1-9CDD841FF35C}</Project>
+      <Name>CQRS.InvoiceTracker.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

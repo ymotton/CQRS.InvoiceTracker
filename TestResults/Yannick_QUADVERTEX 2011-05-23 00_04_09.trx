@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="1bad3fd4-9fbc-495d-8bc8-bafe09d7b0e8" name="Yannick@QUADVERTEX 2011-05-23 00:04:09" runUser="QuadVertex\Yannick" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="cdd1f0be-8b79-4576-88db-88bf0584423b">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Yannick_QUADVERTEX 2011-05-23 00_04_09">
+      <DeploymentItem filename="C:\Program Files (x86)\TechTalk\SpecFlow\TechTalk.SpecFlow.dll" />
+      <DeploymentItem filename="C:\Code\github\CQRS.InvoiceTracker\packages\WatiN.2.1.0\lib\net40\WatiN.Core.dll" />
+      <DeploymentItem filename="C:\Code\github\CQRS.InvoiceTracker\CQRS.InvoiceTracker.Web\bin\CQRS.InvoiceTracker.Web.dll" />
+      <DeploymentItem filename="C:\Code\github\CQRS.InvoiceTracker\CQRS.InvoiceTracker.FeatureHelpers\bin\Debug\CQRS.InvoiceTracker.FeatureHelpers.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-05-23T00:04:09.6283757+02:00" queuing="2011-05-23T00:04:11.0124549+02:00" start="2011-05-23T00:04:11.1224612+02:00" finish="2011-05-23T00:04:31.5996324+02:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="4" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="3" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="QUADVERTEX" outcome="Error" timestamp="2011-05-23T00:04:31.5976323+02:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="LoginOnWithTheNewlyCreatedAccount" storage="c:\code\github\cqrs.invoicetracker\cqrs.invoicetracker.features\bin\debug\cqrs.invoicetracker.features.dll" id="c941db2b-6719-08cb-0cd3-b81804146f73">
+      <Description>Login On with the newly created account</Description>
+      <Execution id="b915d074-e00d-46ff-a75d-c5012b34285a" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Account Management</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Code/github/CQRS.InvoiceTracker/CQRS.InvoiceTracker.Features/bin/Debug/CQRS.InvoiceTracker.Features.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CQRS.InvoiceTracker.Features.AccountManagementFeature, CQRS.InvoiceTracker.Features, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LoginOnWithTheNewlyCreatedAccount" />
+    </UnitTest>
+    <UnitTest name="CreatingAnAccount" storage="c:\code\github\cqrs.invoicetracker\cqrs.invoicetracker.features\bin\debug\cqrs.invoicetracker.features.dll" id="4225542c-1a3b-0977-0d8c-728f858161c1">
+      <Description>Creating an account</Description>
+      <Execution id="1c61158e-ae95-45c1-808b-2dc2fc48ac49" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Account Management</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Code/github/CQRS.InvoiceTracker/CQRS.InvoiceTracker.Features/bin/Debug/CQRS.InvoiceTracker.Features.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CQRS.InvoiceTracker.Features.AccountManagementFeature, CQRS.InvoiceTracker.Features, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreatingAnAccount" />
+    </UnitTest>
+    <UnitTest name="GoingToTheLogOnPage" storage="c:\code\github\cqrs.invoicetracker\cqrs.invoicetracker.features\bin\debug\cqrs.invoicetracker.features.dll" id="fdd8b786-e79e-647b-dd2a-c50c0f1d18c4">
+      <Description>Going to the "LogOn" page</Description>
+      <Execution id="b9b80641-8b5f-469e-ac57-8b6aa4d38c5b" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Account Management</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Code/github/CQRS.InvoiceTracker/CQRS.InvoiceTracker.Features/bin/Debug/CQRS.InvoiceTracker.Features.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CQRS.InvoiceTracker.Features.AccountManagementFeature, CQRS.InvoiceTracker.Features, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GoingToTheLogOnPage" />
+    </UnitTest>
+    <UnitTest name="GoingToTheAccountPage" storage="c:\code\github\cqrs.invoicetracker\cqrs.invoicetracker.features\bin\debug\cqrs.invoicetracker.features.dll" id="6eac4922-8c19-60d4-a2d5-1b59753c34ec">
+      <Description>Going to the "Account" page</Description>
+      <Execution id="af8c045f-8088-4c8b-a0ca-fbacf3c7db82" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Account Management</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Code/github/CQRS.InvoiceTracker/CQRS.InvoiceTracker.Features/bin/Debug/CQRS.InvoiceTracker.Features.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CQRS.InvoiceTracker.Features.AccountManagementFeature, CQRS.InvoiceTracker.Features, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GoingToTheAccountPage" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="4225542c-1a3b-0977-0d8c-728f858161c1" executionId="1c61158e-ae95-45c1-808b-2dc2fc48ac49" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6eac4922-8c19-60d4-a2d5-1b59753c34ec" executionId="af8c045f-8088-4c8b-a0ca-fbacf3c7db82" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c941db2b-6719-08cb-0cd3-b81804146f73" executionId="b915d074-e00d-46ff-a75d-c5012b34285a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fdd8b786-e79e-647b-dd2a-c50c0f1d18c4" executionId="b9b80641-8b5f-469e-ac57-8b6aa4d38c5b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="1c61158e-ae95-45c1-808b-2dc2fc48ac49" testId="4225542c-1a3b-0977-0d8c-728f858161c1" testName="CreatingAnAccount" computerName="QUADVERTEX" duration="00:00:20.3541642" startTime="2011-05-23T00:04:11.2444682+02:00" endTime="2011-05-23T00:04:31.5986324+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1c61158e-ae95-45c1-808b-2dc2fc48ac49">
+    </UnitTestResult>
+    <UnitTestResult executionId="af8c045f-8088-4c8b-a0ca-fbacf3c7db82" testId="6eac4922-8c19-60d4-a2d5-1b59753c34ec" testName="GoingToTheAccountPage" computerName="QUADVERTEX" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="af8c045f-8088-4c8b-a0ca-fbacf3c7db82">
+    </UnitTestResult>
+    <UnitTestResult executionId="b915d074-e00d-46ff-a75d-c5012b34285a" testId="c941db2b-6719-08cb-0cd3-b81804146f73" testName="LoginOnWithTheNewlyCreatedAccount" computerName="QUADVERTEX" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b915d074-e00d-46ff-a75d-c5012b34285a">
+    </UnitTestResult>
+    <UnitTestResult executionId="b9b80641-8b5f-469e-ac57-8b6aa4d38c5b" testId="fdd8b786-e79e-647b-dd2a-c50c0f1d18c4" testName="GoingToTheLogOnPage" computerName="QUADVERTEX" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b9b80641-8b5f-469e-ac57-8b6aa4d38c5b">
+    </UnitTestResult>
+  </Results>
+</TestRun>
